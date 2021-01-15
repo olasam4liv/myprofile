@@ -12,7 +12,7 @@
   firebase.initializeApp(firebaseConfig);
 
   //Refrence messages collestion
-  let messageRef = firebase.databese().ref('messages');
+  var messagesRef = firebase.database().ref('messages');
 
 const contactForm= document.querySelector('#contact-form')
 
@@ -30,14 +30,9 @@ contactForm.addEventListener('submit', function(e){
 	const email = getInputValue('email').value.trim();
 	const message = getInputValue('message').value.trim();  
     
-	 
-    const saveDataRef = {
-        name: name,
-        subject: subject,
-        email, email,
-        message: message
- 		} 
-	console.log(saveDataRef)
+	 saveMessage(name, subject, email, message);
+   
+	console.log(saveMessage)
 	 
 	// Show Alert
 	document.querySelector('.alert').style.display='block'
@@ -54,10 +49,19 @@ contactForm.addEventListener('submit', function(e){
  }
 
 
-
  function clearFields(){
 	 setTimeout(function(){
 		document.querySelector('#contact-form').reset();
 	 }, 2000)
 	
+}
+
+function saveMessage(name, subject, email, message){
+newMessageRef = messagesRef.push();
+newMessageRef.set({
+		name: name,
+        subject: subject,
+        email, email,
+        message: message
+});
 }
