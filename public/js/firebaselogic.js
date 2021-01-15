@@ -10,7 +10,10 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  
+
+  //Refrence messages collestion
+  let messageRef = firebase.databese().ref('messages');
+
 const contactForm= document.querySelector('#contact-form')
 
 contactForm.addEventListener('submit', function(e){
