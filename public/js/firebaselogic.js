@@ -1,3 +1,16 @@
+ // Your web app's Firebase configuration
+ var firebaseConfig = {
+    apiKey: "AIzaSyAD0oQ2mW2WfiZRCHa8tM_QGAmlD0BLBmg",
+    authDomain: "samuel-olatunji.firebaseapp.com",
+    databaseURL: "https://samuel-olatunji.firebaseio.com",
+    projectId: "samuel-olatunji",
+    storageBucket: "samuel-olatunji.appspot.com",
+    messagingSenderId: "1083305842379",
+    appId: "1:1083305842379:web:4c0e01fe396cdc87d3ed4e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
 const contactForm= document.querySelector('#contact-form')
 
 contactForm.addEventListener('submit', function(e){
