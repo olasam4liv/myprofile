@@ -1,0 +1,29 @@
+[debug] [2021-01-16T04:32:16.582Z] ----------------------------------------------------------------------
+[debug] [2021-01-16T04:32:16.588Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2021-01-16T04:32:16.588Z] CLI Version:   8.10.0
+[debug] [2021-01-16T04:32:16.589Z] Platform:      win32
+[debug] [2021-01-16T04:32:16.589Z] Node Version:  v12.18.1
+[debug] [2021-01-16T04:32:16.594Z] Time:          Sat Jan 16 2021 05:32:16 GMT+0100 (West Africa Standard Time)
+[debug] [2021-01-16T04:32:16.595Z] ----------------------------------------------------------------------
+[debug] [2021-01-16T04:32:16.595Z] 
+[debug] [2021-01-16T04:32:16.644Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-16T04:32:16.645Z] > authorizing via signed-in user
+[debug] [2021-01-16T04:32:16.646Z] [iam] checking project samuel-olatunji for permissions ["firebase.projects.get"]
+[debug] [2021-01-16T04:32:16.654Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/samuel-olatunji:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-01-16T04:32:18.350Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 16 Jan 2021 04:32:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1177","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-16T04:32:18.354Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/samuel-olatunji  
+ 
+[debug] [2021-01-16T04:32:18.869Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 16 Jan 2021 04:32:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'D:\webdev\myprofile'...
+[info] 
+[debug] [2021-01-16T04:32:19.278Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/samuel-olatunji/webApps/-/config  
+ 
+[debug] [2021-01-16T04:32:20.242Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 16 Jan 2021 04:32:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [16/Jan/2021:04:32:52 +0000] "GET / HTTP/1.1" 200 10186 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jan/2021:04:32:52 +0000] \"GET / HTTP/1.1\" 200 10186 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Jan/2021:04:32:53 +0000] "GET /js/firebaselogic.js HTTP/1.1" 200 1731 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jan/2021:04:32:53 +0000] \"GET /js/firebaselogic.js HTTP/1.1\" 200 1731 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Jan/2021:04:44:19 +0000] "GET / HTTP/1.1" 200 10363 "-" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Mobile Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jan/2021:04:44:19 +0000] \"GET / HTTP/1.1\" 200 10363 \"-\" \"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Mobile Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Jan/2021:04:44:20 +0000] "GET /js/firebaselogic.js HTTP/1.1" 200 1731 "http://localhost:5000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Mobile Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jan/2021:04:44:20 +0000] \"GET /js/firebaselogic.js HTTP/1.1\" 200 1731 \"http://localhost:5000/\" \"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Mobile Safari/537.36\""}}
