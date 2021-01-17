@@ -35,7 +35,7 @@ contactForm.addEventListener('submit', function(e){
 	console.log(saveMessage)
 	 
 	// Show Alert
-	document.querySelector('.alert').style.display='block'
+	document.querySelector('.alert').style.display = 'block'
 	//Hide alert
 	setTimeout(() => {
 		document.querySelector('.alert').style.display='none'
