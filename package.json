@@ -1,0 +1,27 @@
+{
+  "name": "myprofile",
+  "version": "1.0.0",
+  "description": "Samuel Olatunji Profile",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olasam4liv/myprofile.git"
+  },
+  "author": "Samuel Olatunji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olasam4liv/myprofile/issues"
+  },
+  "homepage": "https://github.com/olasam4liv/myprofile#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {}
+}
