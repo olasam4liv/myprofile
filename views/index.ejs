@@ -174,9 +174,9 @@
            
             <h3 style=text-align:center;>Get In Touch</h3>
             
-                <form id="contact-form">
+                <form id="contact-form" method="POST" action="send">
                     <div class="alert-container" >
-                        <div class="alert">Your Message Has Been Successfully Sent, We would get back to you in due course</div>
+                        <div class="alert">Your Message Has Been Successfully Sent, We would get back to you in due course <%% msg%></div>
                     </div>
 
                     <label for="name">
@@ -222,7 +222,7 @@
         </div>
     </section>       
     <script type="text/javascript" src="../public/js/script.js"></script>
-    <script type="text/javascript" src="public/js/validator.js"></script>
+    <script type="text/javascript" src="../public/js/validator.js"></script>
     
 </body>
 </html>
