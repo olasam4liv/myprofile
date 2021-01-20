@@ -37,7 +37,6 @@ app.post('/send', (req, res)=>{
     console.log(outPut)
 
    
-
     let transporter = nodemailer.createTransport({
         host: 'mail.bulklineltd.com',
         port: 587,
@@ -50,7 +49,6 @@ app.post('/send', (req, res)=>{
             rejectUnauthorized:false
         }
     });
-
 
 
      //set up email data with unicode symbols
