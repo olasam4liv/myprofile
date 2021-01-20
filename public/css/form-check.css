@@ -79,7 +79,7 @@
     display: block;
     margin: var(--fh-layout-margin);
     text-align: var(--fh-layout-text-align);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     position: relative;
     padding: 0 20px;
   }

@@ -97,7 +97,7 @@ var nameValidityChecks = [
 	},
 	{
 		isInvalid: function(input) {
-			var illegalCharacters = input.value.match(/[^a-zA-Z0-9]/g);
+			var illegalCharacters = input.value.match(/[^ a-zA-Z0-9]/g);
 			return illegalCharacters ? true : false;
 		},
 		invalidityMessage: 'Only letters and numbers are allowed',

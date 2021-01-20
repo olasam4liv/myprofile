@@ -309,13 +309,13 @@ padding: 15px;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: var(--secondaryColor);
+    /* background-color: var(--secondaryColor); */
     border-radius: 5px;
     border: 1px solid var(--borderColor);
     font-size: 14px;
 }
 #contact-form label{
-    line-height: 2.7em;
+    line-height: 1em;
 }
 #contact-form textarea{
     min-height: 100px;

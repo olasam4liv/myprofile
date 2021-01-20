@@ -27,24 +27,27 @@ app.post('/send', (req, res)=>{
     <p> You have a new contact request</p>
     <h3> Contact Details</h3>
     <ul>
-    <li>Name:${req.body.name}</li>
-    <li>Subject:${req.body.subject}</li>
-    <li>Email:${req.body.email}</li> 
+    <li>Name: ${req.body.name}</li>
+    <li>Subject: ${req.body.subject}</li>
+    <li>Email: ${req.body.email}</li> 
     </ul>
     <h3> Message</h3>
-    <p>${req.body.message}</p>
+    <p> ${req.body.message}</p>
     `;
     console.log(outPut)
 
    
 
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true,
+        host: 'mail.bulklineltd.com',
+        port: 587,
+        secure: false,
         auth:{
-            user: 'olasam4liv@gmail.com',
-            pass: 'Samsam.Ola@6047!'
+            user: 'sam@bulklineltd.com',
+            pass: ';5O)3k42!}V$'
+        },
+        tls:{
+            rejectUnauthorized:false
         }
     });
 
@@ -52,7 +55,7 @@ app.post('/send', (req, res)=>{
 
      //set up email data with unicode symbols
     let mailOptions = {
-        from:'"Message From Samuel Olatunji Profile"<olasam4liv@gmail.com>',
+        from:'"Message From Samuel Olatunji Profile"<sam@bulklineltd.com>',
         to:'olasam4liv@gmail.com',
         subject:'Message From Samuel Olatunji Profile',
         text:'Hello World',
@@ -65,7 +68,9 @@ app.post('/send', (req, res)=>{
         console.log('Message Sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-        res.render('contact', {msg:'Your Message Has Been Successfully Sent, We would get back to you in due course'});
+        res.render('index', 
+        {msg:'Your Message Has Been Successfully Sent, We would get back to you in due course'}
+        );
 
     });
 
